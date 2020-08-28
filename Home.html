@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Meta tags  to specify page description, keywords, author of the document-->
+	<meta name="description" content="Bundle Books Nepal" />
+	<meta name="keywords" content="Online Books" />
+	<meta name="author" content="Anisha Karmacharya" />
+	<title>Bundle Books Nepal </title>
+	<!--link> tag  used to link to external style sheets.-->
+	<!-- rel to specify the relationship between the current document and the linked document-->
+	<link rel="stylesheet" href="CSS/style.css"/>
+  	<link rel="icon"  href="books/logo.png"/>
+	 <!--Internal CSS-->
+  	<style>
+		* {
+	  		box-sizing: border-box;
+		}
+		body,
+		html {
+		  	padding: 0;
+		  	margin: 0;
+		  	height: auto;
+		}
+
+	  	.btn {
+		    background-color: #1e1e1e;
+		    border: 1px solid white;
+		    border-radius: 25px;
+		    color: white;
+		    padding: 15px 25px;
+		    text-align: center;
+		    font-size: 16px;
+		    cursor: pointer;
+		    position: all;
+	  	}
+
+	  	.btn:hover {
+		    background-color: #0e0e0e;
+		}
+   	</style>
+</head>
+<body>
+<!--header part of the page-->
+    <header class="header">
+      	<div id="navbar"> <!--id made to invoke JS in the page-->
+ <!--Navigation bar--> 
+	        <nav>
+	          <!--table tag to define table-->
+	          <table style="width:100%;margin: all; top:15px ">
+	    			<tr> <!--tr tag to define row-->
+	              		<th style="float: left;">
+	                		<img src="books/logo.png">
+	              		</th>
+	    					<th class="current" style="width: 20%"> <!--th tag  define table header-->
+	    						<a href="#">Home</a>
+	    					</th>
+	    					<th class="menu" style="width: 20%" >
+	    						<a href="pages/Product.html">Product</a> <!--anchor tag defined to insert hyperlinks-->
+	    					</th>
+	    					<th class="menu" style="width: 20%">
+	    						<a href="pages/Blog.html"> Blog</a>
+	    					</th>
+	    					<th class="menu"style="width: 20%">
+	    						<a href="pages/Research.html">Research</a>
+	    					</th>
+	    					<th class="menu"style="width: 20%">
+	    						<a href="pages/contact.html">Contact</a>
+	    					</th>
+	    				</tr>
+	    			</table>
+	        	</nav>
+        	</div>
+    	</div>
+    </header>
+    <main>
+      	<div class ="overlay" style="background-image: url(books/bg.jpg);">
+      		<h2 style=" letter-spacing: 2px;">
+	          	A Sofa,<br>
+	          	A Good Book,<br>
+	          	And You.
+	          	<a href="pages/Product.html">
+	          	<br><button class="btn"onclick="alert('Redirecting to product page')">Shop now</button>
+	          	</a>
+        	</h2>
+  		 </div>
+    </main>
+<!--footer section of the page-->
+   	<footer class="footer">
+      	<nav>
+	        <table style="width:100%;margin: all;">
+	          	<tr>
+		            <th class="current" style="width: 20%">
+		              <a href="#">Home</a>
+		            </th>
+		            <th class="menu" style="width: 20%">
+		              <a href="pages/Product.html">Product</a>
+		            </th>
+		            <th class="menu" style="width: 20%">
+		              <a href="pages/Blog.html"> Blog</a>
+		            </th>
+		            <th class="menu"style="width: 20%">
+		              <a href="#">Research</a>
+		            </th>
+		            <th class="menu"style="width: 20%">
+		              <a href="pages/contact.html">Contact</a>
+		            </th>
+	          	</tr>
+	        </table>
+      	</nav> 
+	    <div id="boxes"><!--<div> tag to define  division -->
+	        <section class="box">
+	          <h3>Home</h3>
+	          <p>This page is the main page created for the project</p>
+	        </section>
+	        <section class="box">
+	          <h3>Product</h3>
+	           <p>This page shows all the product available </p>
+	        </section>
+	        <section class="box">
+	           <h3>Blog</h3>
+	           <p>This page shows all the blogs that has been posted</p>
+	        </section>         
+	        <section class="box">
+	           <h3>Research</h3>
+	           <p>This pages shows the info of site taken as inspiration. </p>
+	        </section>
+	        <section class="box">
+	           <h3>Contact</h3>
+	           <p>This page contains the form for feedback.</p>
+	        </section>
+	    </div>
+	        <a href="https://www.facebook.com/bundlebooksnepal/">
+	          <img src="books/facebook.jpg" style="width: 40px; height:40px; opacity: 0.8; border-radius: 25%;">
+	        </a>
+	        <a href="https://www.instagram.com/bundlebooksnepal/">
+	          <img src="books/insta.jpg" style="width: 40px; height: 40px; opacity: 0.8; border-radius: 25%;">
+	        </a>
+	         <p>Bundle Books Nepal, Copyright &copy; 2019</p>
+    </footer>
+    <!--Java Script-->
+    <script>
+        /*JS that hides the nav bar when the page is scrolled */
+        var prevScrollpos = window.pageYOffset;
+  		  window.onscroll = function() {
+  		  var currentScrollPos = window.pageYOffset;
+   		  if (prevScrollpos > currentScrollPos) {
+   	     document.getElementById("navbar").style.top = "0";
+    		}
+    		else {
+      	document.getElementById("navbar").style.top = "0";
+    		}		
+   		  prevScrollpos = currentScrollPos;
+  		  }
+         var images = ['books/q8.jpg', 'books/q3.jpg', 'books/q7.jpg', 'books/q5.jpg', 'books/q6.jpg'];
+        var x = 0;
+        var imgs = document.getElementById('img');
+        setInterval(slider, 3000);
+        
+        /* JS for imagae slider*/
+        function slider() {
+        if (x < images.length) {
+          x = x + 1;
+        } else {
+          x = 1;
+        }
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+      }
+  	</script>
+</body>
+</html>

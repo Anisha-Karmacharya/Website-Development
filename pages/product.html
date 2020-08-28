@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Meta tags  to specify page description, keywords, author of the document-->
+  <meta name="description" content="Bundle Books Nepal" />
+  <meta name="keywords" content="Online Books" />
+  <meta name="author" content="Anisha karmacharya" />
+  <title>Product</title>
+  <!--link> tag  to link to external style sheets.-->
+  <!-- rel to specify the relationship between the current document and the linked document-->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="icon"  href="../books/logo.png"/>
+      <!--Internal CSS  -->  <title>Product</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="icon"  href="../books/logo.png"/>
+  <style>
+     body{
+      margin: 0;
+      padding: 0;
+      font-family: serif;
+
+    }
+    .container{
+      width: 1470px;
+      min-height: 1500px;
+      background: #ffffff;
+      opacity: 0.5px;
+      margin: 120px auto 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 3px solid white;
+    }
+    .container .box{
+      position: relative;
+      width: 270px;
+      height: 270px;
+      background: #1e1e1e;
+      opacity: 1;
+      margin: 10px;
+      box-sizing: border-box;
+      display: inline-block; 
+    }
+    .container .box .imagebox
+     {
+      position: relative;
+      overflow: hidden;
+     }
+     .container .box .imagebox img
+     {
+      max-width: 100%;
+      transform: transform 2s;
+     }
+     .container .box:hover .imagebox img
+     {
+       transform: scale(1.2);
+     }
+     .container .box .detail
+     {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      background: #ffffff;
+      opacity: 1;
+     }
+     .container .box .detail
+     {
+      position: absolute;
+      top: 50%
+      transform: translateY(-50%);
+      text-align: center;
+      padding: 15px;
+      color: #ffffff;
+      transform: scaleY(0);
+      transition: transform .3s
+     }
+     .container .box:hover .detail{
+        transform: scaleY(1);
+     }
+     .container .box .detail .content h2
+     {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        color: black;
+     }
+     .container .box .detail .content p
+     {
+        margin: 10px 0 0;
+        padding: 0;
+        font-size: 20px;
+        color: black;
+     }
+    .heading h1 {     
+      color: #000000;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      border: 7px solid black;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      font-family: sans-serif;
+      font-size: 24px;
+      margin: 0;
+      opacity: 0.9;
+      letter-spacing: 2px;
+     /*box-shadow: 0 0 10px #1e1e1e, 0 0 26px #1e1e1e;*/
+    }
+    #boxes .box{
+      float:left;
+      text-align: center;
+      letter-spacing: 2px;
+      width:17%;
+      padding:20px;
+      border: 2px solid black;  
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div id="navbar">
+      <nav>
+        <table style="width:100%;margin: all;">
+          <tr>
+            <th style="float: left;">
+              <img src="../books/logo.png">
+            </th>
+            <th class="menu"; style="width: 20%">
+              <a href="../Home.html">Home</a>
+            </th>
+            <th class="current"; style="width: 20%">
+              <a href="pages/Product.html">Product</a>
+            </th>
+            <th class="menu"; style="width: 20%">
+              <a href="Blog.html"> Blog</a>
+            </th>
+            <th class="menu"; style="width: 20%">
+              <a href="research.html">Research</a>
+            </th>
+            <th class="menu"; style="width: 20%">
+              <a href="Contact.html">Contact</a>
+            </th>
+          </tr>
+        </table>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="heading" style="background: #ffffff;">
+      <h1 style="text-transform: uppercase; letter-spacing: 2px">"There's no such thing as too many books"</h1>
+    </div>
+    <div class="container" style="background-image: url(../books/bg12.jpg);">
+     <div>
+      <h1 style="color: white; text-align: center; letter-spacing: 3px;">Best Seller</h1>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/1.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">The Secret</h2>
+            <h3 style="font-size: 16px; margin: 3px;"> Author: Rhonda Byrne</h3>
+            <p style="font-size: 14px; margin: 3px;">
+              The Secret’s 10th Anniversary Edition includes a new foreword by Rhonda Byrne, and 10 of the most life-changing insights she’s had over the last 10 years of practicing and living The Secret every day. The 10 insights alone will accelerate your understanding and mastery of the law of attraction.
+            </p>
+            <h3 style="font-size: 16px; margin: 3px; letter-spacing: 2px;">Price: Rs 550</h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/2.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+           <h2 style="margin: 0px; letter-spacing: 2px;">Celebrate your body</h2>
+            <h3 style="font-size: 16px; margin: 3px;"> Author: Sonya Renee Taylor</h3>
+            <p style="font-size: 14px; margin: 3px;">
+               For many girls, puberty can be an uncertain time. Celebrate Your Body includes everything girls need to know about breasts and bras, their period, hair here and there, feelings and friends, and so much more. This book will guide them as they learn about their amazing, changing, one-of-a-kind bodies―during puberty and beyond!
+            </p>
+            <h3 style="font-size: 16px; margin: 3px; letter-spacing: 2px;">Price: Rs 450</h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/3.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">Mackenzi Lee Novel</h2>
+            <h3 style="font-size: 16px; margin: 2px;"> Author: Mackenzi Lee</h3>
+            <p style="font-size: 14px; margin: 2px;">
+               Highly anticipated sequel to the New York Times bestselling The Gentleman’s Guide to Vice and Virtue, Felicity Montague must use all her womanly wits and wiles to achieve her dreams of becoming a doctor—even if she has to scheme her way across Europe to do it. A must-have for fans of Mackenzi Lee’s extraordinary novel.
+            </p>
+            <h3 style="font-size: 16px; margin: 3px; letter-spacing: 2px;">Price: Rs 950</h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/4.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+             <h2 style="margin: 0px; letter-spacing: 2px;">Perfect</h2>
+            <h3 style="font-size: 16px; padding-top: 2px;"> Author: Cecelia Ahern</h3>
+            <p style="font-size: 14px; padding-top: 3Spx;">
+               In Perfect, Cecelia Ahern's thrilling sequel to Flawed, Celestine must make a choice: save just herself or risk her own life to save all Flawed people.With tensions building, can Celestine prove that to be human in itself is to be Flawed?
+            </p>
+            <h3 style="font-size: 16px; padding-top: 3px; letter-spacing: 2px;">Price: Rs 450</h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/5.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">The Bride Test</h2>
+            <h3 style="font-size: 16px; padding-top: 2px;"> Author:Helen Hoang</h3>
+            <p style="font-size: 14px; padding-top: 5px;">
+              From the USA Today bestselling author of The Kiss Quotient comes a romantic novel about love that crosses international borders and all boundaries of the heart...
+            </p>
+            <h3 style="font-size: 16px; padding-top: 3px; letter-spacing: 2px;">Price: Rs 550</h3>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/6.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">Gemina</h2>
+            <h3 style="font-size: 16px;"> Author: A. kaufman & J.kristoff</h3>
+            <p style="font-size: 14px; padding-top: 5px;">
+              Brace yourself for GEMINA—the highly anticipated sequel to the book critics called “out-of-this-world awesome”—featuring journal illustrations by bestselling author Marie Lu!
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500</h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/7.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">Illuminae</h2>
+            <h3 style="font-size: 16px;"> Author: A. kaufman & J.kristoff</h3>
+            <p style="font-size: 14px; padding-top: 3px;">
+              For fans of Marie Lu comes the first book in an epic series that bends the sci-fi genre into a new dimension.<br>
+              “A truly beautiful novel that redefines the form." —Victoria Aveyard, bestselling author of Red Queen
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500</h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/24.png">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">The Astonishing Colour of After</h2>
+            <h3 style="font-size: 16px;"> Author: Emily X R Pan</h3>
+            <p style="font-size: 14px; padding-top: 3px;">
+              Life, loss, love and art explode in a kaleidoscope of emotions as one girl must learn the truth about her family's past in order to bring peace to the present. For fans of J.Green, J.Niven, J.Nelson and Nicola Yoon.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/9.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">Ash Princess</h2>
+            <h3 style="font-size: 16px;"> Author: Laura Sebastian</h3>
+            <p style="font-size: 14px; padding-top: 3px;">
+              Made for fans of Victoria Aveyard and Sabaa Tahir" (Bustle), Ash Princess is an epic new fantasy about a throne cruelly stolen and a girl who must fight to take it back for her people.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/21.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">Across the Nightingale Floor</h2>
+            <h3 style="font-size: 16px;"> Author: Lian Hearn</h3>
+            <p style="font-size: 14px; padding-top: 3px;">
+              An international bestseller, Across the Nightingale Floor is the first book in the Tales of the Otori series by Lian Hearn. Don't miss the related series, The Tale of Shikanoko.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500
+            </h3>
+          </div>
+        </div>
+      </div>
+      <
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/22.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">12 Rules For Life</h2>
+            <h3 style="font-size: 16px;"> Author: Jordan B Peterson </h3>
+            <p style="font-size: 13px;">
+                What does everyone in the modern world need to know? Renowned psychologist Peterson's answer to this most difficult of questions uniquely combines the hard-won truths of ancient tradition with the stunning revelations of cutting-edge scientific research.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/23.png">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">The Hating Game</h2>
+            <h3 style="font-size: 16px;"> Author: Sally Throne </h3>
+            <p style="font-size: 14px;">
+                Debut author Sally Thorne bursts on the scene with a hilarious and sexy workplace comedy all about that thin, fine line between hate and love.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/13.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">The Lovely Bones</h2>
+            <h3 style="font-size: 16px;"> Author: Alice Sebould </h3>
+            <p style="font-size: 12px;">
+                Once in a generation a novel comes along that taps a vein of universal human experience, resonating with readers of all ages. THE LOVELY BONES is such a book celebrated at once for its artistry, for its luminous clarity of emotion, and for its astonishing power to lay claim to the hearts of millions of readers around the world.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/14.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">The subtle Art of Not Giving a Fck</h2>
+            <h3 style="font-size: 16px;"> Author: Mark Manson </h3>
+            <p style="font-size: 13px;">
+                A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real-talk, filled with entertaining stories and ruthless humor, This book is a refreshing slap for a generation to help them lead contented, grounded lives.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 500
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/15.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">#GirlBoss</h2>
+            <h3 style="font-size: 16px;"> Author: Sophia Amorusa </h3>
+            <p style="font-size: 14px;">
+                In the New York Times bestseller that the Washington Post called “Lean In for misfits,” Sophia Amoruso shares how she went from dumpster diving to founding one of the fastest-growing retailers in the world.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 600
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/8.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2>Next year in Havana</h2>
+            <h3 style="font-size: 16px;"> Author: Chanel Cleeton </h3>
+            <p style="font-size: 14px;">
+                After the death of her beloved grandmother, a Cuban-American woman travels to Havana, where she discovers the roots of her identity—and unearths a family secret hidden since the revolution.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 750
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/book 1.png">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2>Flowers for Algernon</h2>
+            <h3 style="font-size: 16px;"> Author: Daniel Keyes </h3>
+            <p style="font-size: 14px;">
+                The story of a mentally disabled man whose experimental quest for intelligence mirrors that of Algernon, an extraordinary lab mouse.
+            </p>
+            <h3 style="font-size: 16px; padding-top: 2px; letter-spacing: 2px;">Price: Rs 850
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/18.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">Atomic Habit</h2>
+            <h3 style="font-size: 16px;"> Author: James Clear </h3>
+            <p style="font-size: 14px;">
+                 Atomic Habits offers a proven framework for improving every day.James Clear, reveals practical strategies that will teach exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results
+            </p>
+            <h3 style="font-size: 16px; letter-spacing: 2px;">Price: Rs 700
+            </h3>
+          </div>
+        </div></div>
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/19.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+            <h2 style="margin: 0px; letter-spacing: 2px;">Girl, Stop Apologizing</h2>
+            <h3 style="font-size: 16px;"> Author: Rachel Hollis </h3>
+            <p style="font-size: 13px;">
+                 Author sounds a wake-up call.  With a challenge to women everywhere to stop talking themselves out of their dreams, Hollis identifies the excuses to let go of, the behaviors to adopt, and the skills to acquire on the path to growth, confidence, and believing in yourself.
+            </p>
+            <h3 style="font-size: 16px; letter-spacing: 2px;">Price: Rs 700
+            </h3>
+          </div>
+        </div>
+      </div> 
+      <div class="box">
+        <div class="imagebox">
+          <img src="../books/20.jpg">
+        </div>
+        <div class="detail" >
+          <div class="content">
+             <h2 style="margin: 0px; letter-spacing: 2px;">Mr Penumbra's 24-hour Bookstore</h2>
+            <h3 style="font-size: 16px;"> Author: Robin Sloan </h3>
+            <p style="font-size: 13px;">
+                 Robin Sloan's Mr. Penumbra's 24-Hour Bookstore is exactly what it sounds like: an establishment you have to enter and will never want to leave.
+            </p>
+            <h3 style="font-size: 16px; letter-spacing: 2px;">Price: Rs 550
+            </h3>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </main>
+  <footer class="footer">
+    <nav>
+      <table style="width:100%;margin: all;">
+        <tr>
+          <th class="menu" style="width: 20%">
+            <a href="../home.html">Home</a>
+          </th>
+          <th class="current" style="width: 20%">
+            <a href="Product.html">Product</a>
+          </th>
+          <th class="menu" style="width: 20%">
+            <a href="Blog.html"> Blog</a>
+          </th>
+          <th class="menu"style="width: 20%">
+            <a href="research.html">Research</a>
+          </th>
+          <th class="menu"style="width: 20%">
+            <a href="contact.html">Contact</a>
+          </th>
+        </tr>
+      </table>
+    </nav> 
+    <div id="boxes">
+      <section class="box">
+        <h3>Home</h3>
+        <p>This page is the main page created for the project</p>
+     </section>
+     <section class="box">
+        <h3>Product</h3>
+         <p>This page shows all the product available </p>
+      </section>
+      <section class="box">
+         <h3>Blog</h3>
+         <p>This page shows all the blogs that has been posted</p>
+       </section>         
+       <section class="box">
+         <h3>Research</h3>
+         <p>This pages shows the info of site taken as inspiration. </p>
+       </section>
+       <section class="box">
+         <h3>Contact</h3>
+         <p>This page contains the form for feedback.</p>
+       </section>
+    </div>
+      <img src="../books/facebook.jpg" style="width: 40px; height:40px; opacity: 0.8; border-radius: 25%;">
+      <img src="../books/insta.jpg" style="width: 40px; height: 40px; opacity: 0.8; border-radius: 25%;">
+      <p>Bundle Books Nepal, Copyright &copy; 2019</p>    
+  </footer>
+    <!--Java Script-->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    }
+    else {
+      document.getElementById("navbar").style.top = "0";
+    }   
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</body>
+</html>
